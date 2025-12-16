@@ -8,7 +8,7 @@ total = food + transport + coffee
 
 print("My total expense today is:", total)
  
-print("🎉 Welcome to My Expense Calculator 🎉") 
+print(" Welcome to My Expense Calculator ") 
 food = 300
 transport = 150
 coffee = 100
@@ -16,7 +16,7 @@ coffee = 100
 total = food + transport + coffee
 
 print("-----------------------------")
-print("💰 Your total expense today is:", total)
+print(" Your total expense today is:", total)
 print("-----------------------------")
 
 
@@ -34,21 +34,21 @@ total = food + transport + coffee
 
 # Print total
 print("-----------------------------")
-print("💰 Your total expense today is:", total)
+print(" Your total expense today is:", total)
 
 # Check which category had highest expense
 if food >= transport and food >= coffee:
-    print("🍔 You spent the most on Food!")
+    print(" You spent the most on Food!")
 elif transport >= food and transport >= coffee:
-    print("🚌 You spent the most on Transport!")
+    print(" You spent the most on Transport!")
 else:
-    print("☕ You spent the most on Coffee!")
+    print(" You spent the most on Coffee!")
 
 # Budget warning
 if total > budget:
-    print("⚠️ Warning! You exceeded your budget by", total - budget, "units.")
+    print(" Warning! You exceeded your budget by", total - budget, "units.")
 else:
-    print("✅ Great! You are within your budget.")
+    print(" Great! You are within your budget.")
 print("-----------------------------")
 
 
@@ -56,7 +56,7 @@ print("-----------------------------")
 expenses = {}   # store expenses
 total = 0
 
-print("🧾 Daily Expense Tracker")
+print(" Daily Expense Tracker")
 print("Type 'done' to finish entering expenses")
 print("----------------------------------")
 
@@ -72,17 +72,17 @@ while True:
     total += amount
 
 print("----------------------------------")
-print("📊 Expense Summary")
+print(" Expense Summary")
 
 for name, amount in expenses.items():
     print(f"{name}: {amount}")
 
 print("----------------------------------")
-print("💰 Total expense:", total)
+print("Total expense:", total)
 
 # Highest expense
 highest = max(expenses, key=expenses.get)
-print("🔥 Highest spending:", highest, "-", expenses[highest])
+print(" Highest spending:", highest, "-", expenses[highest])
 
 print("----------------------------------")
 
@@ -126,6 +126,7 @@ while True:
                 print("Expenses saved sucessfully")
                
     
+
 
 
 
