@@ -21,10 +21,10 @@ print("-----------------------------")
 
 
 
-# Set a daily budget
+
 budget = int(input("Enter your daily budget: "))
 
-# Ask for expenses
+
 food = int(input("Enter food expense: "))
 transport = int(input("Enter transport expense: "))
 coffee = int(input("Enter coffee expense: "))
@@ -32,11 +32,11 @@ coffee = int(input("Enter coffee expense: "))
 # Calculate total
 total = food + transport + coffee
 
-# Print total
+
 print("-----------------------------")
 print(" Your total expense today is:", total)
 
-# Check which category had highest expense
+
 if food >= transport and food >= coffee:
     print(" You spent the most on Food!")
 elif transport >= food and transport >= coffee:
@@ -80,7 +80,7 @@ for name, amount in expenses.items():
 print("----------------------------------")
 print("Total expense:", total)
 
-# Highest expense
+
 highest = max(expenses, key=expenses.get)
 print(" Highest spending:", highest, "-", expenses[highest])
 
@@ -111,11 +111,11 @@ while True:
         print("------------------------")
         print("Total expense:",total)
 
-        #Highest expense
+      
         highest =max(expenses, key=expenses.get)
         print("Highest spending:",highest,"-",expenses[highest])
 
-        #save to file
+       
         with open("expenses.txt","a") as file:
             file.write("New Day Expenses\n")
             for name,amount in expenses.item():
@@ -126,6 +126,7 @@ while True:
                 print("Expenses saved sucessfully")
                
     
+
 
 
 
